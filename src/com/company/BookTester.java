@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.ArrayList;
 
-public class BookTester {
+public class  BookTester {
     public static void main(String[] args) {
         Book a = new Book("Jim", "Jimbo");
         PictureBook b = new PictureBook("Tim", "Timmy", "Timothy");
@@ -20,15 +20,15 @@ public class BookTester {
         Book book2 = new PictureBook("The Wonderful Wizard of Oz", "L. Frank Baum", "W.W. Denslow");
         myLibrary.add(book1);
 
-        System.out.println("");
-
         myLibrary.add(book2);
 
-        System.out.println("");
+        BookListing c = new BookListing(book1, 10.99);
 
-        BookListing c = new BookListing(book1, 11.99);
+        BookListing d = new BookListing(book2, 12.99);
 
         c.printDescription();
+        System.out.println("");
+        d.printDescription();
     }
 
 

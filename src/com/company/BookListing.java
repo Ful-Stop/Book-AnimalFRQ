@@ -6,8 +6,8 @@ public class BookListing {
     private double price;
 
     public BookListing(Book b, double p){
-        b = book;
-        p = price;
+        book = b;
+        price = p;
     }
 
     public void printDescription(){
